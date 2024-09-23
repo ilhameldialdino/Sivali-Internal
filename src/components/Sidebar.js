@@ -4,7 +4,7 @@ import SimpleBar from 'simplebar-react';
 import { useLocation } from "react-router-dom";
 import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faBoxOpen, faChartPie, faCog, faFileAlt, faHandHoldingUsd, faSignOutAlt, faTable, faTimes, faCalendarAlt, faMapPin, faInbox, faRocket, faBriefcase, faCheckCircle, faMoneyBill, faMale, faHome, faPersonBooth } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faBoxOpen, faChartPie, faCog, faFileAlt, faHandHoldingUsd, faSignOutAlt, faTable, faTimes, faCalendarAlt, faMapPin, faInbox, faRocket, faBriefcase, faCheckCircle, faMoneyBill, faMale, faHome, faPersonBooth, faBinoculars, faIdBadge, faBrain, faTasks, faLayerGroup, faGraduationCap, faUserTag, faTags, faTag, faHashtag, faExternalLinkSquareAlt, faUserCheck, faUsers, faNewspaper, faUserClock, faMoneyBillWaveAlt, faCity } from "@fortawesome/free-solid-svg-icons";
 import { Nav, Badge, Image, Button, Dropdown, Accordion, Navbar } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -12,6 +12,8 @@ import { Routes } from "../routes";
 import ThemesbergLogo from "../assets/img/themesberg.svg";
 import ReactHero from "../assets/img/technologies/react-hero-logo.svg";
 import ProfilePicture from "../assets/img/team/profile-picture-3.jpg";
+import { faBuilding, faObjectGroup, faObjectUngroup } from "@fortawesome/free-regular-svg-icons";
+import { faXing } from "@fortawesome/free-brands-svg-icons";
 
 export default (props = {}) => {
   const location = useLocation();
@@ -105,17 +107,30 @@ export default (props = {}) => {
               <NavItem title="Volt React" link={Routes.Presentation.path} image={ReactHero} /> */}
 
 
-              <NavItem title="Create / Edit Job Posting" link={Routes.CreateOrEditJobPosting.path} icon={faChartPie} />
+              {/* <NavItem title="Create / Edit Job Posting" link={Routes.CreateOrEditJobPosting.path} icon={faChartPie} />
               <NavItem title="Create / Edit PIC" link={Routes.CreateOrEditPic.path} icon={faChartPie} />
               <NavItem title="Create Transaction" link={Routes.CreateTransaction.path} icon={faChartPie} />
+              <NavItem title="Create / Edit Education" link={Routes.CreateOrEditEducation.path} icon={faChartPie} />
+              <NavItem title="Create / Edit Industry" link={Routes.CreateOrEditIndustry.path} icon={faChartPie} />
+              <NavItem title="Create / Edit Job Category" link={Routes.CreateOrEditJobCategory.path} icon={faChartPie} />
+              <NavItem title="Create / Edit Job Role" link={Routes.CreateOrEditJobRole.path} icon={faChartPie} />
+              <NavItem title="Create / Edit Job Specialization" link={Routes.CreateOrEditJobSpecialization.path} icon={faChartPie} /> */}
 
               <NavItem title="Home" link={Routes.DashboardOverview.path} icon={faHome} />
-              <NavItem title="Job Posting" link={Routes.JobPosting.path} icon={faBriefcase} />
-              <NavItem title="List Attendance" link={Routes.ListAttendance.path} icon={faMale} />
-              <NavItem title="List Transaction" link={Routes.ListTransaction.path} icon={faMoneyBill} />
-              <NavItem title="List PIC" link={Routes.ListPic.path} icon={faPersonBooth} />
-              <NavItem title="List Candidate" link={Routes.ListCandidate.path} icon={faPersonBooth} />
+              <NavItem title="Job Posting" link={Routes.JobPosting.path} icon={faNewspaper} />
+              <NavItem title="List Attendance" link={Routes.ListAttendance.path} icon={faUserClock} />
+              <NavItem title="List Transaction" link={Routes.ListTransaction.path} icon={faMoneyBillWaveAlt} />
+              <NavItem title="List Employee" link={Routes.ListEmployee.path} icon={faUsers} />
+              {/* <NavItem title="List PIC" link={Routes.ListPic.path} icon={faPersonBooth} /> */}
+              {/* <NavItem title="List Candidate" link={Routes.ListCandidate.path} icon={faPersonBooth} /> */}
 
+              <NavItem title="List Company" link={Routes.ListCompany.path} icon={faBuilding} />
+              <NavItem title="List Education" link={Routes.ListEducation.path} icon={faGraduationCap} />
+              <NavItem title="List Industry" link={Routes.ListIndustry.path} icon={faCog} />
+              <NavItem title="List Job Category" link={Routes.ListJobCategory.path} icon={faUserCheck} />
+              <NavItem title="List Job Role" link={Routes.ListJobRole.path} icon={faIdBadge} />
+              <NavItem title="List Job Specialization" link={Routes.ListJobSpecialization.path} icon={faBrain} />
+ 
               {/*<NavItem external title="Messages" link="https://demo.themesberg.com/volt-pro-react/#/messages" target="_blank" badgeText="Pro" icon={faInbox} />
               <NavItem title="Transactions" icon={faHandHoldingUsd} link={Routes.Transactions.path} />
               <NavItem title="Settings" icon={faCog} link={Routes.Settings.path} />

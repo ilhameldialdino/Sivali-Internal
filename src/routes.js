@@ -1,4 +1,3 @@
-
 export const Routes = {
     // pages
     Presentation: { path: "/" },
@@ -8,11 +7,24 @@ export const Routes = {
     CreateOrEditJobPosting: { path: "/dashboard/create-or-edit-job-posting/:method"},
     CreateOrEditPic: { path: "/dashboard/create-or-edit-pic/:method"},
     EditJobPosting: { path: "/dashboard/edit-job-posting"},
+    CreateOrEditEducation: { path: "/dashboard/create-or-edit-education/:method"},
+    CreateOrEditIndustry: { path: "/dashboard/create-or-edit-industry/:method"},
+    CreateOrEditJobCategory: { path: "/dashboard/create-or-edit-job-category/:method"},
+    CreateOrEditJobRole: { path: "/dashboard/create-or-edit-job-role/:method"},
+    CreateOrEditJobSpecialization: { path: "/dashboard/create-or-edit-job-specialization/:method"},
     JobPosting: { path: "/dashboard/job-posting" },
     ListAttendance: { path: "/dashboard/list-attendance" },
     ListTransaction: { path: "/dashboard/list-transaction" },
     ListPic: { path: "/dashboard/list-pic" },
     ListCandidate: { path: "/dashboard/list-candidate" },
+
+    ListCompany: { path: "/dashboard/list-company" },
+    ListEducation: { path: "/dashboard/list-education" },
+    ListEmployee: { path: "/dashboard/list-employee" },
+    ListIndustry: { path: "/dashboard/list-industry" },
+    ListJobCategory: { path: "/dashboard/list-job-category" },
+    ListJobRole: { path: "/dashboard/list-job-role" },
+    ListJobSpecialization: { path: "/dashboard/list-job-specialization" },
 
     Transactions: { path: "/transactions" },
     Settings: { path: "/settings" },

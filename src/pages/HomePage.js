@@ -10,11 +10,22 @@ import DashboardOverview from "./dashboard/DashboardOverview";
 import CreateTransaction from "./dashboard/CreateTransaction";
 import CreateOrEditJobPosting from './dashboard/CreateOrEditJobPosting';
 import CreateOrEditPic from './dashboard/CreateOrEditPic';
+import CreateOrEditEducation from './dashboard/CreateOrEditEducation';
+import CreateOrEditIndustry from './dashboard/CreateOrEditIndustry';
+import CreateOrEditJobCategory from './dashboard/CreateOrEditJobCategory';
+import CreateOrEditJobRole from './dashboard/CreateOrEditJobRole';
 import JobPosting from "./dashboard/JobPosting";
 import ListAttendance from "./dashboard/ListAttendance";
 import ListTransaction from "./dashboard/ListTransaction";
 import ListPic from "./dashboard/ListPic";
 import ListCandidate from "./dashboard/ListCandidate";
+import ListCompany from "./dashboard/ListCompany";
+import ListEducation from "./dashboard/ListEducation";
+import ListEmployee from "./dashboard/ListEmployee";
+import ListIndustry from "./dashboard/ListIndustry";
+import ListJobCategory from "./dashboard/ListJobCategory"
+import ListJobRole from "./dashboard/ListJobRole";
+import ListJobSpecialization from "./dashboard/ListJobSpecialization";
 
 import Transactions from "./Transactions";
 import Settings from "./Settings";
@@ -64,6 +75,7 @@ import Tables from "./components/Tables";
 import Tabs from "./components/Tabs";
 import Tooltips from "./components/Tooltips";
 import Toasts from "./components/Toasts";
+import CreateOrEditJobSpecialization from './dashboard/CreateOrEditJobSpecialization';
 
 const RouteWithLoader = ({ component: Component, ...rest }) => {
   const [loaded, setLoaded] = useState(false);
@@ -138,11 +150,26 @@ export default () => (
     <RouteWithSidebar exact path={Routes.CreateTransaction.path} component={CreateTransaction} />
     <RouteWithSidebar exact path={Routes.CreateOrEditJobPosting.path} component={CreateOrEditJobPosting} />
     <RouteWithSidebar exact path={Routes.CreateOrEditPic.path} component={CreateOrEditPic} />
+    <RouteWithSidebar exact path={Routes.CreateOrEditEducation.path} component={CreateOrEditEducation} />
+    <RouteWithSidebar exact path={Routes.CreateOrEditIndustry.path} component={CreateOrEditIndustry} />
+    <RouteWithSidebar exact path={Routes.CreateOrEditJobCategory.path} component={CreateOrEditJobCategory} />
+    <RouteWithSidebar exact path={Routes.CreateOrEditJobPosting.path} component={CreateOrEditJobPosting} />
+    <RouteWithSidebar exact path={Routes.CreateOrEditJobRole.path} component={CreateOrEditJobRole} />
+    <RouteWithSidebar exact path={Routes.CreateOrEditJobSpecialization.path} component={CreateOrEditJobSpecialization} />
+
     <RouteWithSidebar exact path={Routes.JobPosting.path} component={JobPosting} />
     <RouteWithSidebar exact path={Routes.ListAttendance.path} component={ListAttendance} />
     <RouteWithSidebar exact path={Routes.ListTransaction.path} component={ListTransaction} />
     <RouteWithSidebar exact path={Routes.ListPic.path} component={ListPic} />
     <RouteWithSidebar exact path={Routes.ListCandidate.path} component={ListCandidate} />
+
+    <RouteWithSidebar exact path={Routes.ListCompany.path} component={ListCompany} />
+    <RouteWithSidebar exact path={Routes.ListEducation.path} component={ListEducation} />
+    <RouteWithSidebar exact path={Routes.ListEmployee.path} component={ListEmployee} />
+    <RouteWithSidebar exact path={Routes.ListIndustry.path} component={ListIndustry} />
+    <RouteWithSidebar exact path={Routes.ListJobCategory.path} component={ListJobCategory} />
+    <RouteWithSidebar exact path={Routes.ListJobRole.path} component={ListJobRole} />
+    <RouteWithSidebar exact path={Routes.ListJobSpecialization.path} component={ListJobSpecialization} />
 
     <RouteWithSidebar exact path={Routes.Upgrade.path} component={Upgrade} />
     <RouteWithSidebar exact path={Routes.Transactions.path} component={Transactions} />
